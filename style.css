@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6E6E6;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.15), -4px -4px 20px 4px rgba(255, 255, 255, 0.2);
+}
+
+.top-section{
+    background-color: #F6F6F6;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#input-string{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#output-string{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.button-section button{
+    aspect-ratio: 4/5;
+    font-size: 30px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s background-color ease-in-out;
+}
+
+.button-section button:hover,
+.button-section button:focus
+{
+    background-color: white;
+    border: solid 1px rgb(228, 228, 228);
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+.button-section .red, .button-section .green{
+    background-color: #C5C5C5;
+}
